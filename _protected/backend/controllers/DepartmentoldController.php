@@ -14,7 +14,7 @@ use yii\filters\VerbFilter;
 use Yii;
 use yii\db\Query;
 
-class DepartmentController extends Controller {
+class DepartmentoldController extends Controller {
 
     public function behaviors() {
         return[

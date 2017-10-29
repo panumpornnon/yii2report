@@ -31,8 +31,9 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'ข้อมูลหลัก', 'options' => ['class' => 'header']],
-                                        ['label' => 'ข้อมูลแผนก', 'icon'=>'fa fa-blacket','url'=>['/department/index']],
-                                        ['label' => 'ข้อมูลตำแหน่ง', 'icon'=>'fa fa-dashboard','url'=>['/position/index']],
+                                        ['label' => 'ข้อมูลบุคคลากร', 'icon'=>'fa fa-blacket','url'=>['/person/index']],
+                                        ['label' => 'ข้อมูลแผนก_เดิม', 'icon'=>'fa fa-blacket','url'=>['/departmentold/index']],
+                                        ['label' => 'ข้อมูลตำแหน่ง_เดิม', 'icon'=>'fa fa-dashboard','url'=>['/positionold/index']],
 					['label' => 'ข้อมูลผู้ใช้', 'icon'=>'fa fa-user','url'=>['/user/index']],
                     
                     ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],

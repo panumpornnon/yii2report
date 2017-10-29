@@ -13,13 +13,15 @@ use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use Yii;
 
+use yii\data\SqlDataProvider;
+
 /**
 
  * Site controller.
  * It is responsible for displaying static pagec, and logging users in and out.
  * 
  *  */
-class PositionController extends Controller {
+class PositionoldController extends Controller {
     /*     * *
 
      * Returns a list of behaviors that this component should behave as.     /
@@ -39,7 +41,7 @@ class PositionController extends Controller {
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index','delete'],
+                        'actions' => ['logout', 'index','delete','grid'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -89,4 +91,19 @@ class PositionController extends Controller {
         return $this->redirect(['index']);
     }
 
+    
+    public function actionGrid(){
+        $count = Yii::$app->db->createCommand('SELECT COUNT(*) FROM position')->queryScalar();
+        $dataProvider = new SqlDataProvider([
+            'sql' => 'SELECT * FROM position', //คำสั่ง SQL
+            'totalCount'=> $count, //จำนวนแถวทั้งหมด
+            'pagination'=>[
+                'pageSize' => 10, //จะแหบ่งหน้าละกี่แถว
+            ],
+        ]);
+        
+        return $this->render('grid',[
+            'dataProvider' => $dataProvider,
+        ]); 
+    }
 }
