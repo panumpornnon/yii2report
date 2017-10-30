@@ -19,7 +19,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('สร้างใหม่', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('สร้างใหม่', ['create'], ['class' => 'btn btn-success']) ?>&nbsp;|&nbsp;
+        <?= Html::a('รายงาน', ['pdf'], ['class' => 'btn btn-primary'],['target'=>'_blank','class' => 'linksWithTarget']) ?>&nbsp;|&nbsp;
+         <?= Html::a('ExExcel-บุคลากร', ['export'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(['enablePushState' => false]); ?>

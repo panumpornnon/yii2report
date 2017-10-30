@@ -36,6 +36,7 @@ class ComposerStaticInitda5d12ccba0826c9b018d9fe3e49a1ef
         ),
         'm' => 
         array (
+            'moonland\\phpexcel\\' => 18,
             'mihaildev\\ckeditor\\' => 19,
         ),
         'k' => 
@@ -106,6 +107,10 @@ class ComposerStaticInitda5d12ccba0826c9b018d9fe3e49a1ef
             0 => __DIR__ . '/..' . '/nenad/yii2-widgets-base',
             1 => __DIR__ . '/..' . '/nenad/yii2-strength-meter',
         ),
+        'moonland\\phpexcel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/moonlandsoft/yii2-phpexcel',
+        ),
         'mihaildev\\ckeditor\\' => 
         array (
             0 => __DIR__ . '/..' . '/mihaildev/yii2-ckeditor',
@@ -138,6 +143,13 @@ class ComposerStaticInitda5d12ccba0826c9b018d9fe3e49a1ef
             'cebe\\gravatar\\' => 
             array (
                 0 => __DIR__ . '/..' . '/cebe/yii2-gravatar',
+            ),
+        ),
+        'P' => 
+        array (
+            'PHPExcel' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpoffice/phpexcel/Classes',
             ),
         ),
         'H' => 

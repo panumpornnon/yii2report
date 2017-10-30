@@ -125,7 +125,8 @@ class PersonController extends Controller
     
     //GenPdf
     public function actionPdf(){
-        $query = Person::find()->limit(50); //ตรงนี้สามารถควิรี่ข้อมูลตามใจชอบ
+        //$query = Person::find()->limit(50); //ตรงนี้สามารถควิรี่ข้อมูลตามใจชอบ
+        $query = Person::find()->all();
         
         $dataProvider = new \yii\data\ActiveDataProvider([
             'query' => $query,
@@ -171,5 +172,16 @@ class PersonController extends Controller
         ]);
         //return the pdf output as per the destination setting
         return $pdf->render();
+    }
+    
+    //export command excel
+    public function actionExport() {
+        $model = Person::find()->all(); //ในส่วนนี้เราสามารถคิวรี่ข้อมูลอย่างไรก็ได้ครับ ถ้าเราต้องการ
+
+        return \moonland\phpexcel\Excel::widget([
+                    'models' => $model,
+                    'mode' => 'export', //default value as 'export'
+                    'fileName' => time(),
+        ]);
     }
 }

@@ -17,7 +17,9 @@
         "nenad/yii2-password-strength": "*",
         "mihaildev/yii2-ckeditor": "*",
 		"dmstr/yii2-adminlte-asset": "2.*",
-                "kartik-v/yii2-mpdf": "*"
+                "kartik-v/yii2-mpdf": "*",
+                "moonlandsoft/yii2-phpexcel": "*"
+               
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

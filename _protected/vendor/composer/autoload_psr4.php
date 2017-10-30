@@ -17,6 +17,7 @@ return array(
     'rmrevin\\yii\\fontawesome\\' => array($vendorDir . '/rmrevin/yii2-fontawesome'),
     'nenad\\passwordStrength\\' => array($vendorDir . '/nenad/yii2-password-strength'),
     'nenad\\' => array($vendorDir . '/nenad/yii2-widgets-base', $vendorDir . '/nenad/yii2-strength-meter'),
+    'moonland\\phpexcel\\' => array($vendorDir . '/moonlandsoft/yii2-phpexcel'),
     'mihaildev\\ckeditor\\' => array($vendorDir . '/mihaildev/yii2-ckeditor'),
     'kartik\\mpdf\\' => array($vendorDir . '/kartik-v/yii2-mpdf'),
     'dmstr\\' => array($vendorDir . '/dmstr/yii2-adminlte-asset'),

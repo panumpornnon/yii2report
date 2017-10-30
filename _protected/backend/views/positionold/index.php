@@ -12,6 +12,11 @@ $this->title = Yii::t('app', 'ตำแหน่ง ทั้งหมด'.Html:
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
+<p>
+    <?= Html::a('ExExcel-ตำแหน่ง', ['export'], ['class' => 'btn btn-primary'],['target'=>'_blank','class' => 'linksWithTarget']) ?>&nbsp;|&nbsp;
+    <?= Html::a('ImExcel_ตำแหน่ง', ['import'], ['class' => 'btn btn-primary'],['target'=>'_blank','class' => 'linksWithTarget']) ?>
+</p>
+
 <div class="row">
 <div class="col-md-6">
 <table class="table table-hover">
