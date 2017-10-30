@@ -18,7 +18,9 @@
         "mihaildev/yii2-ckeditor": "*",
 		"dmstr/yii2-adminlte-asset": "2.*",
                 "kartik-v/yii2-mpdf": "*",
-                "moonlandsoft/yii2-phpexcel": "*"
+                "moonlandsoft/yii2-phpexcel": "*",
+                "miloschuman/yii2-highcharts-widget": "dev-master"
+               
                
     },
     "require-dev": {

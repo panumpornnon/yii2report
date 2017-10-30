@@ -37,6 +37,7 @@ class ComposerStaticInitda5d12ccba0826c9b018d9fe3e49a1ef
         'm' => 
         array (
             'moonland\\phpexcel\\' => 18,
+            'miloschuman\\highcharts\\' => 23,
             'mihaildev\\ckeditor\\' => 19,
         ),
         'k' => 
@@ -110,6 +111,10 @@ class ComposerStaticInitda5d12ccba0826c9b018d9fe3e49a1ef
         'moonland\\phpexcel\\' => 
         array (
             0 => __DIR__ . '/..' . '/moonlandsoft/yii2-phpexcel',
+        ),
+        'miloschuman\\highcharts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/miloschuman/yii2-highcharts-widget/src',
         ),
         'mihaildev\\ckeditor\\' => 
         array (

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a80af3dcb9446bf868cf40e92335272d",
+    "content-hash": "46e3db62fcf66b065d50c5d76a9d09bf",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -94,6 +94,25 @@
                 "responsive",
                 "web"
             ]
+        },
+        {
+            "name": "bower-asset/highcharts",
+            "version": "v6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/highcharts/highcharts-dist.git",
+                "reference": "7b6db41f67cd49f86cf0766376d675e17062c6fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/highcharts/highcharts-dist/zipball/7b6db41f67cd49f86cf0766376d675e17062c6fe",
+                "reference": "7b6db41f67cd49f86cf0766376d675e17062c6fe",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "highcharts.js"
+            }
         },
         {
             "name": "bower-asset/jquery",
@@ -607,6 +626,55 @@
                 "yii"
             ],
             "time": "2014-11-19T22:04:08+00:00"
+        },
+        {
+            "name": "miloschuman/yii2-highcharts-widget",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/miloschuman/yii2-highcharts.git",
+                "reference": "19d205b8775f26e7c1a5c6560ec20e23c480c244"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/miloschuman/yii2-highcharts/zipball/19d205b8775f26e7c1a5c6560ec20e23c480c244",
+                "reference": "19d205b8775f26e7c1a5c6560ec20e23c480c244",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/highcharts": "^6.0",
+                "yiisoft/yii2": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.4"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "miloschuman\\highcharts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milo Schuman",
+                    "email": "miloschuman@gmail.com"
+                }
+            ],
+            "description": "Highcharts widget for Yii 2 Framework.",
+            "homepage": "https://github.com/miloschuman/yii2-highcharts",
+            "keywords": [
+                "extension",
+                "highcharts",
+                "highmaps",
+                "highstock",
+                "widget",
+                "yii2"
+            ],
+            "time": "2017-10-27T13:56:43+00:00"
         },
         {
             "name": "moonlandsoft/yii2-phpexcel",
@@ -1742,7 +1810,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "miloschuman/yii2-highcharts-widget": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
